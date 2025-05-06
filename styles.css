@@ -11,7 +11,7 @@ body {
   padding: 0 10px;
   justify-content: center;
   min-height: 100vh;
-  background: #5E63BA;
+  background: #8abcf9;
 }
 
 .container {
@@ -21,7 +21,10 @@ body {
   gap: 70px;
   align-items: flex-end;
   padding: 60px 40px;
-  border-radius: 10px; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.32);
+  -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.32);
+  -moz-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.32); 
 }
 
 .hangman-box img {
@@ -86,7 +89,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  background: #5E63BA;
+  background: #7eb5f8;
   border-radius: 4px;
   cursor: pointer;
   outline: none;
@@ -104,7 +107,7 @@ body {
 }
 
 :where(.game-modal, .keyboard) button:hover {
-  background: #8286c9;
+  background: #4d94ec;
 }
 
 .game-modal {

@@ -30,9 +30,9 @@ const getRandomWord = () => {
 const gameOver = (isVictory) => {
   // Setelah 600ms game selesai, menampilkan modalbox yang sesuai dengan hasil
   setTimeout(() => {
-    const modalText = isVictory ? `You found the word:` : `The correct word was:`;
+    const modalText = isVictory ? `Kamu menemukan jawabannya:` : `Jawaban yang benar adalah:`;
     gameModal.querySelector("img").src = `images/${isVictory ? 'victory' :  'lost'}.gif`;
-    gameModal.querySelector("h4").innerText = `${isVictory ? 'Congrats!' :  'Game Over!'}`;
+    gameModal.querySelector("h4").innerText = `${isVictory ? 'Selamat!' :  'Game Over!'}`;
     gameModal.querySelector("p").innerHTML = `${modalText} <b>${currentWord}</b>`;
     gameModal.classList.add("show");
   }, 300);
